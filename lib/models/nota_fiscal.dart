@@ -9,6 +9,13 @@ class NotaFiscal {
     return NotaFiscal(
         valor: json['total'], empresa: Empresa.fromJson(json['empresa']));
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'total': valor,
+      'empresa': empresa.toJson(),
+    };
+  }
 }
 
 class Empresa {
@@ -49,6 +56,20 @@ class Empresa {
         enderecoCompleto: Local.fromJson(json));
     return empresa;
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'CNPJ': cnpj,
+      'CNAE PRINCIPAL DESCRICAO': cnaeDescricao,
+      'DATA ABERTURA': dataAbertura,
+      'EMAIL': email,
+      'NOME FANTASIA': nomeFantasia,
+      'RAZAO SOCIAL': razaoSocial,
+      'STATUS': status,
+      'TELEFONE': telefone,
+      'ENDERECO COMPLETO': enderecoCompleto?.toJson(),
+    };
+  }
 }
 
 class Local {
@@ -82,5 +103,18 @@ class Local {
         tipoLogradouro: json['TIPO LOGRADOURO'],
         uf: json['UF'],
         complemento: json['COMPLEMENTO']);
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'BAIRRO': bairro,
+      'CEP': cep,
+      'LOGRADOURO': logradouro,
+      'MUNICIPIO': municipio,
+      'NUMERO': numero,
+      'TIPO LOGRADOURO': tipoLogradouro,
+      'UF': uf,
+      'COMPLEMENTO': complemento,
+    };
   }
 }

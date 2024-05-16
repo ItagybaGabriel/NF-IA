@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'views/screens/home_screen.dart';
+import 'package:notas_fiscais_app/views/screens/main_screen.dart';
+
 import 'theme/app_theme.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Notas Fiscais App',
       theme: AppTheme.themeData, // Usando o tema personalizado
-      home: HomeScreen(),
+      home: MainScreen(),
     );
   }
 }

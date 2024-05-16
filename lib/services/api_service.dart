@@ -12,9 +12,12 @@ class ApiService {
     String base64Image = base64Encode(imageBytes);
 
     var body = json.encode({'image': base64Image});
+    print(body);
+    print(base64Image);
 
     var response = await http.post(Uri.parse('$baseUrl/invoice'),
         body: body, headers: {"content-type": "application/json"});
+    print(response.body);
 
     if (response.statusCode == 200) {
       return NotaFiscal.fromJson(json.decode(response.body));
