@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:notas_fiscais_app/models/nota_fiscal.dart';
 import '../../controllers/nota_fiscal_controller.dart';
 import '../../services/api_service.dart';
 
@@ -13,6 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final NotaFiscalController controller = NotaFiscalController(ApiService());
   final ImagePicker _picker = ImagePicker();
   XFile? _imageFile;
+  final List<NotaFiscal> notas = [];
 
   Future<void> _pickImage() async {
     final ImageSource? source = await showModalBottomSheet<ImageSource>(
@@ -51,8 +53,10 @@ class _HomeScreenState extends State<HomeScreen> {
       return;
     }
     try {
-      final notaFiscal = await controller.getNotaFiscalInfo(_imageFile!.path);
-      _showErrorDialog('Sucesso', 'Dados extraídos: ${notaFiscal.descricao}');
+      final notaFiscal = await controller.getNotaFiscalInfo(_imageFile!);
+      _showErrorDialog(
+          'Sucesso', 'Categoria: ${notaFiscal.empresa.cnaeDescricao}');
+      notas.add(notaFiscal);
     } catch (e) {
       _showErrorDialog('Erro ao conectar com a API', e.toString());
     }
