@@ -22,10 +22,10 @@ O projeto foi desenvolvido utilizando uma estrutura modular, com diferentes comp
 ## Frontend
 O front-end do projeto foi desenvolvido utilizando Flutter, proporcionando uma interface de usuário para interagir com a API.
 
-Tela Principal:
+- Tela Principal:
 Permite ao usuário escanear cupons fiscais usando a câmera do dispositivo ou selecionar uma imagem salva na galeria. As informações são salvas na memória do aparalho ao extrair as informações de um cupom fiscal.
 
-Tela de Dashboard:
+- Tela de Dashboard:
 Exibe um resumo das informações salvas, como um gráfico, o valor total das notas já escaneadas, e uma lista com o histórico de cupons (com a opção de excluir algum cupom fiscal indesejado).
 
 ## Principais Tecnologias Envolvidas
