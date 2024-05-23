@@ -31,18 +31,18 @@ Exibe um resumo das informações salvas, como um gráfico, o valor total das no
 ## Principais Tecnologias Envolvidas
 ### Linguagens de Programação:
 
-Python: Linguagem principal utilizada para o desenvolvimento do backend.
-Dart: Linguagem utilizada para o desenvolvimento do front-end com Flutter.
+- Python: Linguagem principal utilizada para o desenvolvimento do backend.
+- Dart: Linguagem utilizada para o desenvolvimento do front-end com Flutter.
 
 ### Frameworks e Bibliotecas:
 
-Flask: Usado para criar a API REST no backend.
-OpenCV: Usado para processamento de imagens e transformações de perspectiva.
-Pytesseract: Utilizado para realizar o OCR e extrair texto das imagens.
-NumPy: Usado para manipulação de arrays e cálculos matemáticos.
-Matplotlib: Utilizado para visualização de imagens transformadas.
-Flutter: Usado para o desenvolvimento do front-end.
-http: Biblioteca do Dart utilizada para fazer requisições HTTP.
+- Flask: Usado para criar a API REST no backend.
+- OpenCV: Usado para processamento de imagens e transformações de perspectiva.
+- Pytesseract: Utilizado para realizar o OCR e extrair texto das imagens.
+- NumPy: Usado para manipulação de arrays e cálculos matemáticos.
+- Matplotlib: Utilizado para visualização de imagens transformadas.
+- Flutter: Usado para o desenvolvimento do front-end.
+- http: Biblioteca do Dart utilizada para fazer requisições HTTP.
 
 ## Instruções de Instalação e Execução:
 
