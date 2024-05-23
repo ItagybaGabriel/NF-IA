@@ -31,7 +31,7 @@ Exibe um resumo das informações salvas, como um gráfico, o valor total das no
 ## Principais Tecnologias Envolvidas
 ### Linguagens de Programação:
 
-- Python: Linguagem principal utilizada para o desenvolvimento do backend.
+- Python: Linguagem utilizada para o desenvolvimento do backend.
 - Dart: Linguagem utilizada para o desenvolvimento do front-end com Flutter.
 
 ### Frameworks e Bibliotecas:
