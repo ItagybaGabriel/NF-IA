@@ -3,7 +3,7 @@ Descrição do Projeto
 Este projeto é uma aplicação que processa imagens de cupons fiscais para extrair informações relevantes, como o valor total e o CNPJ da empresa emissora. O objetivo é facilitar a extração e a verificação dessas informações de forma automatizada, utilizando técnicas de visão computacional e reconhecimento óptico de caracteres (OCR).
 
 ## Desenvolvimento
-O projeto foi desenvolvido utilizando uma estrutura modular, com diferentes componentes para lidar com a leitura de imagens, processamento de dados e integração via API. A aplicação é composta por um backend e um frontend para fornecer uma interface amigável ao usuário.
+O projeto foi desenvolvido utilizando uma estrutura modular, com diferentes componentes para lidar com a leitura de imagens, processamento de dados e integração via API. A aplicação é composta por um backend e um frontend para fornecer uma interface ao usuário.
 
 ## Backend:
 
