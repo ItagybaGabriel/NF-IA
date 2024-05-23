@@ -32,7 +32,7 @@ Exibe um resumo das informações salvas, como um gráfico, o valor total das no
 ### Linguagens de Programação:
 
 - Python: Linguagem utilizada para o desenvolvimento do backend.
-- Dart: Linguagem utilizada para o desenvolvimento do front-end com Flutter.
+- Dart: Linguagem utilizada para o desenvolvimento do frontend com Flutter.
 
 ### Frameworks e Bibliotecas:
 
